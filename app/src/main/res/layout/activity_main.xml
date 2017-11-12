@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.project.ndondot.challenge.MainActivity">
 
+    <com.roughike.bottombar.BottomBar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:bb_tabXmlResource="@xml/bottom_bar_tabs">
+
+    </com.roughike.bottombar.BottomBar>
 </FrameLayout>
