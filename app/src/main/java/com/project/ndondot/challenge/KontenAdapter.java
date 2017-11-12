@@ -41,7 +41,7 @@ public class KontenAdapter extends RecyclerView.Adapter<KontenAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(KontenAdapter.ViewHolder holder, int position) {
-        KontenModel kontenModel = kontenModelList.get(position);
+        final KontenModel kontenModel = kontenModelList.get(position);
 
         holder.duration.setText(kontenModel.getDuration());
         holder.title.setText(kontenModel.getTitle());
@@ -51,7 +51,7 @@ public class KontenAdapter extends RecyclerView.Adapter<KontenAdapter.ViewHolder
         holder.list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Sudah diklik", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, " " + kontenModel.getTitle() + " sudah diklik", Toast.LENGTH_SHORT).show();
             }
         });
     }
