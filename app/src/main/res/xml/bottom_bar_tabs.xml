@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tab>
+    <tab
+        id="@+id/home"
+        icon="@drawable/home"/>
+    <tab
+        id="@+id/trending"
+        icon="@drawable/trending"/>
+    <tab
+        id="@+id/subscription"
+        icon="@drawable/subscription"/>
+    <tab
+        id="@+id/activity"
+        icon="@drawable/activity"/>
+    <tab
+        id="@+id/library"
+        icon="@drawable/library"/>
+</Tab>
