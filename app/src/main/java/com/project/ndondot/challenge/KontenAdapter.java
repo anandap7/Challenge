@@ -1,8 +1,6 @@
 package com.project.ndondot.challenge;
 
 import android.content.Context;
-import android.media.Image;
-import android.provider.ContactsContract;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +12,6 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -45,13 +42,13 @@ public class KontenAdapter extends RecyclerView.Adapter<KontenAdapter.ViewHolder
 
         holder.duration.setText(kontenModel.getDuration());
         holder.title.setText(kontenModel.getTitle());
-        holder.uploader.setText(kontenModel.uploader);
+        holder.uploader.setText(kontenModel.getUploader());
         Picasso.with(context).load(kontenModel.getThumbnail()).into(holder.thumbnail);
         Picasso.with(context).load(kontenModel.getPp()).into(holder.pp);
         holder.list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, " " + kontenModel.getTitle() + " sudah diklik", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, kontenModel.getTitle() + " sudah diklik", Toast.LENGTH_SHORT).show();
             }
         });
     }
