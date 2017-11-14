@@ -8,7 +8,7 @@
         icon="@drawable/trending"/>
     <tab
         id="@+id/subscription"
-        icon="@drawable/subscription"/>
+        icon="@drawable/subs"/>
     <tab
         id="@+id/activity"
         icon="@drawable/activity"/>
